@@ -6,8 +6,10 @@ import Arrow from '../../assets/arrow.svg';
 import Trash from '../../assets/trash.svg'  
 
 
-
-import { Container, Image, ContainerItens, H1, Button, User } from './styles'
+import H1 from '../../components/Title'
+import ContainerItens from '../../components/containerItems'
+import Button from '../../components/Button';
+import { Container, Image, User } from './styles'
 
 
 function Users() {
@@ -46,7 +48,7 @@ function Users() {
     <Container>
       <Image alt="logo-imagem" src={Avatar} />
 
-      <ContainerItens>
+      <ContainerItens isBlur={true}>
         <H1>Usuários</H1>
 
         <ul>
@@ -62,7 +64,7 @@ function Users() {
           
         </ul>
 
-        <Button onClick={goBackPage} ><img alt='seta' src={Arrow} />  Voltar </Button>
+        <Button isBack={true} onClick={goBackPage} ><img alt='seta' src={Arrow} />  Voltar </Button>
       </ContainerItens>
     </Container>
   )

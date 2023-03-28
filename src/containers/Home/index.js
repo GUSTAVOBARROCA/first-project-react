@@ -7,7 +7,10 @@ import Arrow from '../../assets/arrow.svg';
 
 
 
-import { Container, Image, ContainerItens, H1, InputLabel, Input, Button } from './styles'
+import { Container, Image, InputLabel, Input } from './styles'
+import H1 from '../../components/Title'
+import ContainerItens from '../../components/containerItems'
+import Button from '../../components/Button';
 
 
 function App() {
@@ -15,7 +18,7 @@ function App() {
   // React HOOKS = ferramentas auxiliares
   const [ users , setUsers] = useState([]);
   const history = useHistory()
-  console.log(history)
+  
   //Primeirovem o nome da variavél e depois o que vai ajudar a atualizaravariavel
   const inputName = useRef()
   const inputAge = useRef()
